@@ -9,7 +9,7 @@ bot = commands.Bot(command_prefix="a.")
 
 
 
-@bot.event()
+@bot.event
 async def on_ready():
   print(bot.user.name)
 
