@@ -15,7 +15,7 @@ async def on_ready():
 
   
   
-@bot.command()
+@bot.command(pass_context=True)
 async def hi(ctx):
   await bot.say("Hello there"+" "+ctx.message.author.name)
   
